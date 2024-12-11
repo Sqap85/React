@@ -1,1 +1,3 @@
-npm create vite@latest
+npm create vite@latest devamini okuyarak kur
+
+yeni component kisa yolu rfce
