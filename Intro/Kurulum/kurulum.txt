@@ -1,3 +1,7 @@
-npm create vite@latest devamini okuyarak kur
+npm create vite@latest 
+devamini okuyarak kur(
+cd folder name
+npm install
+npm run dev )
 
 yeni component kisa yolu rfce
