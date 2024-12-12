@@ -5,8 +5,8 @@ npm install
 npm run dev )
 
 yeni component kisa yolu rfce
-console.log kisa yolu clg
-prettier option + shift + F
+console.log kisa yolu clg veya command + shift + l
+prettier option + shift + f
 save command + s
 yorum satiri command + /
 
