@@ -1,0 +1,25 @@
+/* Header styling */
+.header {
+  background-color: #333; /* Koyu gri arka plan */
+  color: #fff; /* Yazı rengi beyaz */
+  padding: 20px 40px; /* Üst ve alt padding: 20px, yanlar: 40px */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* İçerikleri yatayda ayır */
+  align-items: center; /* Dikeyde ortala */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.header-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px; /* Harfler arası boşluk */
+  text-transform: uppercase; /* Yazıları büyük harf yap */
+  transition: transform 0.3s ease;
+}
+
+/* Hover efekti (isteğe bağlı yorumlanmış) */
+/* .header-title:hover {
+   transform: scale(1.1); 
+} */

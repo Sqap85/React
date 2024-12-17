@@ -1,0 +1,50 @@
+/* Tüm sayfa için temel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Ne işe yarar? 
+  - Tüm HTML elementlerinin margin ve padding değerlerini sıfırlar.
+  - `box-sizing: border-box` ile içerik boyutlarını taşırmamak için kutu modelini kullanır.
+  
+  /* Body stilini belirleme */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  /* Ne işe yarar? 
+  - Sayfadaki yazı fontunu Arial yapar.
+  - Sayfa arka planını açık gri (#f4f4f4) yapar.
+  - Metin rengini koyu gri (#333) yapar.
+  - Satır yüksekliğini 1.6 olacak şekilde ayarlar.
+  
+  /* Genel başlık stili */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* Ne işe yarar? 
+  - Başlık elementleri için modern bir yazı fontu kullanır.
+  
+  /* Bağlantı (link) stilini özelleştirme */
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  /* Ne işe yarar? 
+  - Tüm bağlantıların mavi görünmesini sağlar.
+  - Üzerine gelindiğinde alt çizgi ekler.
+  
+  ---
+  ### **2. `index.js` veya `main.jsx` Dosyası**  
+  
+  Bu dosya React uygulamanın başlangıç noktasıdır. React bileşenini HTML'e bağlar.  
+  
+  ```javascript
+  import { StrictMode } from 'react'; // Kodun güvenli ve düzgün
+  */

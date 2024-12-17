@@ -1,0 +1,63 @@
+/* Styling for the course card container (now a link) */
+.course-card {
+  display: flex; 
+  flex-direction: row; /* Elemanları yatay olarak sırala */
+  background-color: #f8f8f8; /* Kart arka plan rengi */
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px; /* Köşeleri yuvarlat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  max-width: 1000px;
+  width: 100%;
+  text-decoration: none; /* Link alt çizgilerini kaldır */
+  color: inherit; /* Metin rengini varsayılan yap */
+  transition: transform 0.3s ease, box-shadow 0.4s ease; /* Hover efekti için geçiş */
+}
+
+/* Hover effect for the card */
+.course-card:hover {
+  transform: translateY(-5px); /* Kartı yukarı kaydır */
+  box-shadow: -4px 6px 12px -3px red; /* Kırmızı gölge efekti */
+  text-decoration: none; /* a nin otomatik altini cizme ozelligini kaldirdik*/
+}
+
+/* Image styling */
+.course-image {
+  width: 250px; /* Resim genişliği */
+  height: 150px; /* Resim yüksekliği */
+  object-fit: cover; /* Resmi orantılı şekilde kırpar */
+  margin-right: 20px; /* Resim ile metin arasına boşluk bırak */
+  border-radius: 8px; /* Resmin köşelerini yuvarlat */
+}
+
+/* Course information container */
+.course-info {
+  display: flex;
+  flex-direction: column; /* İçeriği dikey hizala */
+  justify-content: space-between; /* İçerikleri dikeyde ayır */
+  width: 100%;
+}
+
+/* Title styling */
+.course-info h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+/* Description styling */
+.course-info p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5; /* Satır aralığını ayarlar */
+  margin: 10px 0;
+}
+
+/* Price styling */
+.course-info h3 {
+  font-size: 18px;
+  color: #0a6b0d; /* Yeşil renk */
+  margin-top: 10px;
+  font-weight: bold;
+}

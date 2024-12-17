@@ -1,0 +1,26 @@
+/*Neden index.css ve App.css Ayrı Kullanılır?
+Global Stiller ve Bileşen Stilleri Ayrımı:
+
+index.css: Tüm uygulamayı etkileyen genel stilleri içerir (örneğin body, html, a gibi HTML etiketlerinin stili).
+App.css: Sadece App bileşeni ve onun altındaki elemanlar için stil tanımlanır.
+Bileşenlerin Yeniden Kullanımı:
+
+React'te bileşenler yeniden kullanılabilir yapıdadır.
+Eğer tüm stiller App.css içinde yazılırsa, diğer bileşenlerin stilleri birbirine karışabilir ve kod karmaşık hale gelir.
+index.css ile global ayarları belirler, bileşen bazlı dosyalarda sadece o bileşene özel stilleri yazarız.
+Uygulamanın Modüler Hale Getirilmesi:
+
+Modülerlik sayesinde her bileşen kendine ait bir CSS dosyasına sahip olabilir (örneğin Header.css, Course.css gibi).
+Bu, uygulamanın büyümesi durumunda stil yönetimini kolaylaştırır.
+React'teki Yapı Şöyle Çalışır:
+index.css:
+
+Tüm uygulamaya genel ayarları verir.
+Sayfanın temel görünümü burada şekillenir.
+App.css:
+
+App bileşeninin özel stilleri burada tanımlanır.
+Diğer Bileşenlerin CSS Dosyaları:
+
+Header.css, Course.css gibi dosyalar her bileşenin kendi stillerini taşır.
+*/
