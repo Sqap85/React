@@ -1,0 +1,13 @@
+body {
+  display: flex; /* Tüm body elemanlarını esnek kutu modeliyle düzenler. */
+  flex-direction: column; /* Elemanları dikey olarak sıralar. */
+  justify-content: center; /* Elemanları dikeyde ortalar. */
+  align-items: center; /* Elemanları yatayda ortalar. */
+  margin: 0; /* Sayfa kenar boşluklarını sıfırlar. */
+  padding: 0; /* Sayfa iç kenar boşluklarını sıfırlar. */
+  height: 100vh; /* Sayfanın yüksekliğini tam ekran (viewport height) yapar. */
+  background-image: url(./assets/images/para.jpg); /* Sayfanın arka planına bir resim ekler. */
+  background-repeat: no-repeat; /* Arka plan resminin tekrar etmesini engeller. */
+  background-size: cover; /* Arka plan resmini alanın tamamını kaplayacak şekilde boyutlandırır. */
+  background-position: center; /* Arka plan resmini yatay ve dikey olarak ortalar. */
+}

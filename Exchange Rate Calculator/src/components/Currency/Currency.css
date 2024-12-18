@@ -1,0 +1,72 @@
+.currency-div {
+    display: flex; /* Elemanları esnek kutu modeli ile yerleştirir. */
+    flex-direction: column; /* Elemanları dikey olarak sıralar. */
+    align-items: center; /* Tüm elemanları yatayda ortalar. */
+    justify-content: flex-start; /* Elemanları yukarıdan başlatır. */
+    margin-top: 170px; /* Üstten boşluk bırakır. */
+    width: 450px; /* Genişliği 450 piksel olarak ayarlar. */
+    height: 200px; /* Yüksekliği 200 piksel olarak ayarlar. */
+    border: 3px solid black; /* Çevresine siyah 3 piksel genişliğinde bir çerçeve ekler. */
+    border-radius: 10px; /* Çerçevenin köşelerini yuvarlatır. */
+    padding: 20px; /* İçerikleri kenarlardan 20 piksel uzakta tutar. */
+    background-color: #f4f4f4; /* Arka plan rengini açık gri yapar. */
+}
+
+.arrow {
+    margin-top: 15px; /* Yukarıdan boşluk bırakır. */
+    margin-right: 8px; /* Sağdan boşluk bırakır. */
+}
+
+.button {
+    margin-top: 35px; /* Yukarıdan boşluk bırakır. */
+    padding: 10px 20px; /* Düğmeye iç boşluk ekler (üst-alt 10px, sağ-sol 20px). */
+    background-color: orange; /* Düğmenin arka plan rengini turuncu yapar. */
+    color: white; /* Metin rengini beyaz yapar. */
+    border: none; /* Kenarlıkları kaldırır. */
+    border-radius: 5px; /* Köşeleri yuvarlatır. */
+    cursor: pointer; /* İmleci işaretçiye çevirir. */
+    width: 100px; /* Düğme genişliğini 100 piksel yapar. */
+    height: 40px; /* Düğme yüksekliğini 40 piksel yapar. */
+}
+
+button:hover {
+    background-color: darkorange; /* Üzerine gelindiğinde arka plan rengini koyu turuncuya çevirir. */
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif; /* Yazı tipini Arial veya Helvetica yapar. */
+    background-color: orange; /* Başlık arka plan rengini turuncu yapar. */
+    width: 100%; /* Genişliği %100 olarak ayarlar. */
+    height: 50px; /* Yüksekliği 50 piksel yapar. */
+    text-align: center; /* Metni ortalar. */
+    font-size: 20px; /* Yazı boyutunu 20 piksel yapar. */
+    color: rgb(35, 33, 33); /* Yazı rengini koyu gri yapar. */
+    margin-top: -20px; /* Üstten negatif boşluk ile yukarı iter. */
+    margin-right: 353px; /* Sağdan 353 piksel boşluk bırakır. */
+    border-top-right-radius: 7px; /* Sağ üst köşeyi 7 piksel yuvarlatır. */
+    border-top-left-radius: 7px; /* Sol üst köşeyi 7 piksel yuvarlatır. */
+    padding-top: 15px; /* Üstten iç boşluk ekler. */
+}
+
+.amount,
+.result {
+    height: 25px; /* Yüksekliği 25 piksel yapar. */
+    width: 80px; /* Genişliği 80 piksel yapar. */
+    margin-right: 10px; /* Sağdan 10 piksel boşluk bırakır. */
+    padding: 5px; /* İçerikler ile kenar arasında 5 piksel boşluk bırakır. */
+    border: 1px solid #ccc; /* Açık gri bir kenarlık ekler. */
+    border-radius: 5px; /* Köşeleri yuvarlatır. */
+    font-size: 14px; /* Yazı boyutunu 14 piksel yapar. */
+}
+
+.from-currency-option,
+.to-currency-option {
+    height: 37px; /* Yüksekliği 37 piksel yapar. */
+    width: 80px; /* Genişliği 80 piksel yapar. */
+    margin-right: 10px; /* Sağdan 10 piksel boşluk bırakır. */
+    padding: 5px; /* İçerikler ile kenar arasında 5 piksel boşluk bırakır. */
+    border: 1px solid #ccc; /* Açık gri bir kenarlık ekler. */
+    border-radius: 5px; /* Köşeleri yuvarlatır. */
+    font-size: 14px; /* Yazı boyutunu 14 piksel yapar. */
+    background-color: #fff; /* Arka plan rengini beyaz yapar. */
+}
