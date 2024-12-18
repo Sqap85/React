@@ -1,0 +1,53 @@
+API (Application Programming Interface), bir yazılımın başka bir yazılımla iletişim kurmasını sağlayan bir arabirimdir. API’ler, bir uygulamanın başka bir uygulamanın özelliklerini veya verilerini kullanmasına olanak tanır. Bu, yazılımcılara, belirli bir sistemi veya servisi doğrudan kontrol etmek yerine, sadece o sistemin sunduğu işlevleri kullanma imkânı tanır.
+
+API’lerin Özellikleri:
+	1.	Soyutlama: Karmaşık sistemlerin arka planını gizler ve kullanıcılara sadece ihtiyaç duydukları işlevleri sunar.
+	2.	Standartlaştırma: Farklı yazılımlar arasında standart bir iletişim dili sunar.
+	3.	Yeniden Kullanılabilirlik: Bir API’yi birçok farklı uygulama içinde kullanabilirsiniz.
+
+API Türleri:
+	1.	REST API (Representational State Transfer): HTTP protokolünü kullanır, genelde JSON veya XML formatında veri alır/gönderir.
+	2.	SOAP API (Simple Object Access Protocol): Daha eski bir yöntemdir, XML tabanlıdır.
+	3.	GraphQL API: Tek bir sorguyla birden çok veri noktasına erişim sağlar.
+	4.	Web API’ler: İnternet üzerinden kullanılabilen API’lerdir.
+	5.	Yerel API’ler: Bir cihaz veya işletim sisteminde çalışır.
+
+API Örnekleri:
+	•	Google Maps API: Uygulamanıza haritalar eklemek için kullanabilirsiniz.
+	•	Twitter API: Twitter’daki tweetleri ve kullanıcı verilerini almak için.
+	•	OpenWeather API: Hava durumu bilgilerini almak için.
+
+
+
+
+
+Axios  bir HTTP istemci kütüphanesidir. Özellikle, JavaScript ile geliştirilmiş bir projede HTTP istekleri yapmak (örneğin, bir REST API ile iletişim kurmak) için kullanılan bir araçtır. Axios, hem tarayıcıda hem de Node.js ortamında çalışabilir.
+
+Axios Ne İşe Yarar?
+
+Axios, bir API ile iletişim kurmanıza yardımcı olur. Örneğin:
+	•	GET isteğiyle bir API’den veri alabilirsiniz.
+	•	POST isteğiyle bir API’ye veri gönderebilirsiniz.
+	•	PUT, PATCH veya DELETE istekleriyle verileri güncelleyebilir veya silebilirsiniz.
+
+npm install axios
+
+
+
+
+JSON Server, hızlı bir şekilde bir RESTful API oluşturmanızı sağlayan bir araçtır. Özellikle, prototip geliştirme, testler ve basit projeler için oldukça faydalıdır. JSON Server, bir JSON dosyasını veritabanı gibi kullanarak, bu dosyadaki verilere erişim ve işlemler yapmanıza olanak tanır.
+
+# Install JSON Server Globally
+npm install -g json-server
+
+# #Install JSON Server Locally
+npm install json-server
+
+# Check JSON Server version
+json-server --version
+
+# Run JSON server // dosyanin icine db.json kurman gerek ve cd ile onun yoluna git
+json-server --watch db.json
+
+# Change the server PORT
+json-server --watch db.json --port 4000
