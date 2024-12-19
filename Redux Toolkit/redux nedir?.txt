@@ -1,0 +1,31 @@
+Redux Nedir?
+Redux, JavaScript uygulamaları için bir durum yönetim kütüphanesidir. Genellikle React ile birlikte kullanılır, ancak herhangi bir JavaScript tabanlı uygulamada kullanılabilir. Redux’un temel amacı, uygulamanın durumunu öngörülebilir bir şekilde yönetmek ve uygulamanın farklı bileşenleri arasında durum paylaşımını kolaylaştırmaktır.
+
+Redux’un temel ilkeleri şunlardır:
+	1.	Tekil Kaynak (Store): Uygulamanın tamamındaki durum tek bir merkezi depoda (store) saklanır. Bu durum, tüm bileşenlerin erişebileceği tek bir veri kaynağıdır.
+	2.	Salt Okunabilir Durum (Immutable State): Redux’ta durumu doğrudan değiştiremezsiniz. Durum değişiklikleri, saf fonksiyonlar olan “reducer”lar aracılığıyla gerçekleştirilir.
+	3.	Saf Fonksiyonlar (Reducers): Durum, yalnızca bir aksiyon gönderildiğinde ve ilgili reducer tarafından belirlenen şekilde değişir.
+
+Redux’un temel parçaları:
+	•	Store: Uygulamanın durumunu saklar.
+	•	Actions: Durumu değiştirmek için kullanılan nesneler. Bir type alanı içerir ve genellikle ek veri taşır (payload).
+	•	Reducers: Gelen aksiyonlara göre mevcut durumu güncelleyen saf fonksiyonlar.
+	•	Dispatch: Aksiyonları store’a göndermek için kullanılan mekanizma.
+
+Redux Toolkit Nedir?
+Redux Toolkit, Redux için önerilen modern kullanım yöntemlerini sağlayan bir kütüphanedir. Redux’un kullanımını kolaylaştırmayı ve daha az kod yazarak daha hızlı geliştirme yapmayı hedefler. Redux’un üzerinde çalıştığı temel yapı taşlarını bir araya getirir ve standart bir geliştirme deneyimi sunar.
+
+Redux Toolkit’in özellikleri:
+	1.	configureStore: Redux store’un daha kolay oluşturulmasını sağlar. Middleware’ler ve diğer seçenekler varsayılan olarak ayarlanmıştır.
+	2.	createSlice: Reducer ve aksiyonları aynı anda oluşturur. Geleneksel yöntemle yazılan kodu önemli ölçüde azaltır.
+	3.	createAsyncThunk: Asenkron işlemleri kolayca yönetmek için kullanılır. Örneğin, bir API çağrısı yapmak için idealdir.
+	4.	immer Entegrasyonu: Durum güncellemelerini doğrudan yapıyormuş gibi yazmanıza olanak tanır, ancak aslında immutable yapıyı korur.
+
+Redux ve Redux Toolkit Arasındaki Farklar:
+	•	Redux Toolkit, Redux’un daha az kodla ve daha iyi yapılandırılmış bir şekilde kullanılmasını sağlar.
+	•	Standartlaştırılmış yöntemler sunarak, geliştiricilerin Redux projelerinde sıkça karşılaştıkları sorunları çözmeyi hedefler.
+	•	Asenkron işlemler ve middleware kullanımı daha basit hale getirilmiştir.
+
+npm install @reduxjs/toolkit react-redux
+
+https://cn.redux-toolkit.js.org/tutorials/quick-start/ // bu linkden gerekli yerleri ekle
