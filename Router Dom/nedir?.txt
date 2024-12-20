@@ -1,0 +1,45 @@
+Router DOM, React uygulamaları için bir yönlendirme (routing) kütüphanesidir. Web uygulamalarında sayfalar arasında gezinmeyi kolaylaştırır. React Router DOM, URL'leri dinler ve URL'ye göre doğru bileşenleri render eder. Bu sayede, tek sayfalık uygulamalarda (SPA - Single Page Application) sayfa geçişlerini sağlar, sayfa yenilemesi olmadan içerik değişikliklerini yönetir.
+
+React Router DOM'un sağladığı bazı temel özellikler:
+
+Route: URL'lere karşılık gelen bileşenleri render etmek için kullanılır. Her bir Route, belirli bir URL ile eşleşen bir bileşen sunar.
+
+Routes:Bir grup Route bileşenini kapsar.
+
+BrowserRouter: Tarayıcıda çalışacak olan yönlendiriciyi sarmalar. Uygulamanın tüm yönlendirme işlemlerini yönetir.
+
+Outlet: İç içe geçmiş rotalarda, üst bileşenden alt bileşenlere içerik göstermek için kullanılır.
+Özellikle nested routes yapılandırmalarında önemlidir.
+
+Link: Kullanıcıyı belirli bir URL'ye yönlendiren, tıkladığında sayfa yenilenmesini engelleyen bir bileşendir.
+
+useNavigate: Programatik olarak bir sayfaya yönlendirme yapmak için kullanılır.
+
+useParams: URL'deki dinamik parametreleri alır.
+Örneğin, /product/:id şeklindeki bir route'da id parametresine erişmek için kullanılır.
+
+kurulum
+npm i react-router-dom
+
+
+URL (Uniform Resource Locator), bir kaynağın (örneğin, bir web sayfası, dosya, resim vb.) internet üzerindeki yerini belirten bir adres biçimidir. URL'ler, bir kaynağa erişmek için kullanılan protokolü ve kaynağın konumunu içerir.
+
+https://www.example.com:443/products?id=123#reviews
+Protokol: https
+Alan Adı: www.example.com
+Port Numarası: 443
+Yol: /products
+Sorgu Parametresi: ?id=123
+Parça: #reviews
+
+https://www.example.com/search?query=kitap&sort=price&order=asc
+
+query=kitap: Aranan kelime.
+sort=price: Fiyata göre sıralama.
+order=asc: Sıralama düzeni (artan).
+
+
+? → Sorgu parametrelerinin başladığını belirtir.
+& → Birden fazla parametreyi ayırır.
+= → Anahtar ve değer çiftlerini tanımlar.
+# → Sayfa içinde bir bölüme yönlendirir.
