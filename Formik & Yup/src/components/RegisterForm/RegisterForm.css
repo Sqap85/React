@@ -1,0 +1,93 @@
+/* Genel stil */
+body {
+  font-family: Arial, sans-serif; /* Yazı tipi olarak Arial veya sans-serif seçiyoruz */
+  display: flex; /* Flexbox ile öğeleri hizalamak için */
+  justify-content: center; /* Yatayda merkeze hizalama */
+  align-items: center; /* Dikeyde merkeze hizalama */
+  height: 100vh; /* Sayfanın tamamını kapsayacak şekilde yükseklik */
+  margin: 0; /* Sayfa kenar boşluklarını sıfırlıyoruz */
+  padding: 0; /* Sayfa içindeki boşlukları sıfırlıyoruz */
+  background-color: #f4f4f9; /* Arka plan rengini açık gri yapıyoruz */
+}
+
+/* Formu saran container */
+.baba {
+  width: 400px; /* Formun genişliği */
+  background-color: rgb(188, 185, 185); /* Formun arka plan rengini açık gri yapıyoruz */
+  padding: 40px 40px; /* İçerik etrafında boşluk bırakıyoruz */
+  border-radius: 8px;  /* Köşe yuvarlama */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Hafif gölge ekleniyor */
+  box-sizing: border-box; /* Padding ve border'ın toplam genişliğe dahil edilmesi */
+}
+
+/* Form elemanları için stil */
+form {
+  display: flex; /* Flexbox düzeni ile öğeleri hizalıyoruz */
+  flex-direction: column; /* Form elemanlarını dikey olarak yerleştiriyoruz */
+}
+
+/* Form elemanları arasına boşluk */
+form > div {
+  margin-bottom: 15px; /* Form elemanları arasına 15px boşluk ekliyoruz */
+}
+
+/* Etiketler için stil */
+label {
+  display: block; /* Etiketin tamamının bir blok olarak görünmesini sağlıyoruz */
+  margin-bottom: 5px; /* Etiket ile input arasına 5px boşluk ekliyoruz */
+  font-weight: bold; /* Etiketlerin kalın olmasını sağlıyoruz */
+  color: #333; /* Etiketlerin rengini koyu gri yapıyoruz */
+}
+
+/* Input alanları için stil */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="checkbox"] {
+  width: 100%; /* Input'ların genişliğini %100 yapıyoruz */
+  padding: 10px; /* İçerik etrafında 10px boşluk bırakıyoruz */
+  margin-top: 5px; /* Üst kısımda 5px boşluk bırakıyoruz */
+  margin-bottom: 10px; /* Alt kısımda 10px boşluk bırakıyoruz */
+  border: 1px solid #ccc; /* Gri renkli bir kenarlık */
+  border-radius: 4px; /* Köşe yuvarlama */
+  box-sizing: border-box; /* Border ve padding’in genişliğe dahil edilmesi */
+  font-size: 16px; /* Yazı tipinin boyutunu 16px yapıyoruz */
+}
+
+/* Input alanlarında focus efekti */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Focus olduğunda kenarlık rengini mavi yapıyoruz */
+  outline: none; /* Focus esnasında dış çerçeveyi kaldırıyoruz */
+}
+
+/* Checkbox için stil */
+input[type="checkbox"] {
+  width: auto; /* Checkbox genişliği otomatik olarak ayarlanır */
+  margin-right: 10px; /* Checkbox ile etiket arasında 10px boşluk bırakıyoruz */
+}
+
+/* Submit butonu için stil */
+button {
+  width: 100%; /* Butonun genişliğini %100 yapıyoruz */
+  padding: 10px; /* İçerik etrafında 10px boşluk bırakıyoruz */
+  background-color: #007bff; /* Butonun arka plan rengini mavi yapıyoruz */
+  color: white; /* Yazı rengini beyaz yapıyoruz */
+  border: none; /* Kenarlığı kaldırıyoruz */
+  border-radius: 4px; /* Köşe yuvarlama */
+  font-size: 16px; /* Yazı tipinin boyutunu 16px yapıyoruz */
+  cursor: pointer; /* Fareyi buton üzerine getirdiğimizde işaretçi el şekli olur */
+}
+
+/* Button hover efekti */
+button:hover {
+  background-color: #0056b3; /* Hover (üzerine gelindiğinde) arka plan rengini koyu mavi yapıyoruz */
+}
+
+/* Hata mesajları için stil */
+.error {
+  color: red; /* Hata mesajının rengini kırmızı yapıyoruz */
+  font-size: 12px; /* Hata mesajının yazı boyutunu 12px yapıyoruz */
+  margin-top: 5px; /* Hata mesajı ile form elemanı arasında 5px boşluk bırakıyoruz */
+}

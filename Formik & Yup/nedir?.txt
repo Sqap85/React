@@ -1,0 +1,30 @@
+Formik ve Yup, React uygulamalarında form işleme ve doğrulama işlemlerini kolaylaştıran popüler kütüphanelerdir.
+
+Formik:
+Formik, React uygulamalarında form yönetimini basitleştiren bir kütüphanedir. Formlar, özellikle büyük ve karmaşık hale geldiğinde, form verilerini yönetmek, hata mesajlarını göstermek, formu sıfırlamak gibi işlemler karmaşıklaşabilir. Formik, bu işlemleri daha kolay ve verimli bir şekilde yönetmenizi sağlar.
+
+Formik, aşağıdaki özelliklere sahiptir:
+
+Form durumunu (state) yönetme
+Form doğrulaması (validation)
+Form verilerini işleme (handleSubmit ile)
+Değerlerin (values) güncellenmesi
+Hata mesajları ve form doğrulama
+Formların sıfırlanması
+
+Formik ve Yup, React uygulamalarında form işleme ve doğrulama işlemlerini kolaylaştıran popüler kütüphanelerdir.
+
+Formik:
+Formik, React uygulamalarında form yönetimini basitleştiren bir kütüphanedir. Formlar, özellikle büyük ve karmaşık hale geldiğinde, form verilerini yönetmek, hata mesajlarını göstermek, formu sıfırlamak gibi işlemler karmaşıklaşabilir. Formik, bu işlemleri daha kolay ve verimli bir şekilde yönetmenizi sağlar.
+
+Formik, aşağıdaki özelliklere sahiptir:
+
+Form durumunu (state) yönetme
+Form doğrulaması (validation)
+Form verilerini işleme (handleSubmit ile)
+Değerlerin (values) güncellenmesi
+Hata mesajları ve form doğrulama
+Formların sıfırlanması
+
+kurulumlar
+npm install formik yup
