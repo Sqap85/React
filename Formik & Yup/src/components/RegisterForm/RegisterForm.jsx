@@ -4,14 +4,13 @@ import "./RegisterForm.css"; // CSS dosyasını import ediyoruz
 import { RegisterFormSchema } from "../Schemas/RegisterFormSchema"; // Validation için Yup şemasını import ediyoruz
 
 function RegisterForm() {
-
-    // Form submit işleminde yapılacak işlemler
-    const submit = (values, action) => {
-        setTimeout(() => {
-            action.resetForm(); // Form gönderildikten sonra formu sıfırlıyoruz
-            alert("Aferin Lolipop");
-        }, 1000);
-    }
+  // Form submit işleminde yapılacak işlemler
+  const submit = (values, action) => {
+    setTimeout(() => {
+      action.resetForm(); // Form gönderildikten sonra formu sıfırlıyoruz
+      alert("Aferin Lolipop");
+    }, 1000);
+  };
 
   // useFormik hook'u ile form durumunu yönetiyoruz
   const { values, errors, handleChange, handleSubmit, touched } = useFormik({
@@ -23,12 +22,17 @@ function RegisterForm() {
       term: false, // Checkbox için başlangıç değeri
     },
     validationSchema: RegisterFormSchema, // Formun doğrulama şemasını burada belirtiyoruz (Yup ile)
-    onSubmit: submit // Form gönderildiğinde çalışacak fonksiyonu belirtiyoruz
+    validateOnBlur: false, // Blur (alan dışına tıklama) sırasında doğrulamayı devre dışı bırakır
+    validateOnChange: false, // Değişiklik sırasında doğrulamayı devre dışı bırakır Kullanıcı formu doldururken: Hatalar gösterilmeyecek.
+
+    onSubmit: submit, // Form gönderildiğinde çalışacak fonksiyonu belirtiyoruz
   });
 
   return (
     <div className="baba">
-      <form onSubmit={handleSubmit}> {/* handleSubmit, Formik'in submit işlevini çağırır */}
+      <form onSubmit={handleSubmit}>
+        {" "}
+        {/* handleSubmit, Formik'in submit işlevini çağırır */}
         {/* Email input alanı */}
         <div>
           <label>Email</label>
@@ -45,7 +49,6 @@ function RegisterForm() {
             <p className="error">{errors.email}</p> // Hata mesajını stilize ettik
           )}
         </div>
-
         {/* Age input alanı */}
         <div>
           <label>Age</label>
@@ -62,7 +65,6 @@ function RegisterForm() {
             <p className="error">{errors.age}</p> // Hata mesajını stilize ettik
           )}
         </div>
-
         {/* Password input alanı */}
         <div>
           <label>Password</label>
@@ -79,7 +81,6 @@ function RegisterForm() {
             <p className="error">{errors.password}</p> // Hata mesajını stilize ettik
           )}
         </div>
-
         {/* Confirm Password input alanı */}
         <div>
           <label>Confirm Password</label>
@@ -96,7 +97,6 @@ function RegisterForm() {
             <p className="error">{errors.confirmPassword}</p> // Hata mesajını stilize ettik
           )}
         </div>
-
         {/* Terms of Service checkbox */}
         <div>
           <input
@@ -112,7 +112,6 @@ function RegisterForm() {
             <p className="error">{errors.term}</p> // Hata mesajını stilize ettik
           )}
         </div>
-
         {/* Submit butonu */}
         <button type="submit">Submit</button>
       </form>
