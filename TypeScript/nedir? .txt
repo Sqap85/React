@@ -1,0 +1,20 @@
+TypeScript, JavaScript'in üzerine eklenen, statik tip denetimi yapan ve büyük ölçekli uygulamaları daha güvenli ve sürdürülebilir hale getiren bir programlama dilidir. TypeScript, JavaScript'in tüm özelliklerini barındırır ancak ona tür güvenliği, sınıflar, arayüzler (interfaces), ve diğer nesne yönelimli programlama özelliklerini ekler.
+
+Öne çıkan özellikleri şunlardır:
+
+Statik Tip Kontrolü: TypeScript, değişkenlerin türlerini belirlemenize olanak tanır ve bu sayede derleme aşamasında hataları yakalayabilirsiniz. Örneğin, bir sayıyı bir string ile işlemeniz durumunda, TypeScript bunu derleme zamanında size bildirecektir.
+
+Modern JavaScript Özellikleri: TypeScript, ECMAScript 6 ve sonrasındaki tüm özellikleri destekler (örneğin, sınıflar, modüller, ok fonksiyonları gibi) ve bu özellikleri JavaScript koduna dönüştürür.
+
+Gelişmiş IDE Desteği: TypeScript, iyi bir tip kontrolü ve IntelliSense (otomatik tamamlama) desteği sunar, bu da yazılım geliştirme deneyimini daha verimli hale getirir.
+
+Derlenmiş Çıktı: TypeScript, yazdığınız kodu JavaScript'e dönüştürür, böylece tarayıcılar ve diğer JavaScript motorları tarafından çalıştırılabilir hale gelir.
+
+TypeScript, özellikle büyük ve karmaşık projelerde, hata riskini azaltmak ve daha sürdürülebilir kodlar yazmak için tercih edilir.
+
+
+
+
+
+
+
