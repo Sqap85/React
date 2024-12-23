@@ -1,0 +1,28 @@
+Material-UI (MUI), React tabanlı projelerde modern, estetik ve kullanımı kolay kullanıcı arayüzü (UI) bileşenleri sunan popüler bir kütüphanedir. Material-UI, Google'ın Material Design sistemini temel alır ve bu tasarım prensiplerini kolayca uygulamanızı sağlar.
+
+Material-UI'nin Avantajları
+Önceden Tasarlanmış Bileşenler: Düğmeler, formlar, kartlar, tablolar, diyalog kutuları gibi birçok hazır bileşen sunar.
+Esneklik ve Özelleştirme: Temalar oluşturabilir, renkleri, tipografiyi ve stilleri özelleştirebilirsiniz.
+Responsive Tasarım: Varsayılan olarak mobil uyumlu ve duyarlı tasarımlar destekler.
+Kolay Entegrasyon: React projelerine kolayca entegre edilebilir ve diğer kütüphanelerle birlikte kullanılabilir.
+Geniş Topluluk Desteği: Kapsamlı dokümantasyon ve geniş bir topluluk desteği sunar.
+
+MUI’de (Material-UI) sx özelliği, bir bileşene doğrudan stil uygulamak için kullanılan bir kısayoldur. MUI’nin Sistem API’sini kullanır ve CSS özelliklerini, ayrıca MUI’nin tema yapısını destekler.
+
+sx Özelliğinin Avantajları
+	1.	Tema ile Uyumlu: Tema renklerini, boşluklarını ve diğer ayarları otomatik kullanır.
+	2.	Yerel Stil: Stiller sadece ilgili bileşene uygulanır.
+	3.	Kısa ve Temiz Kod: Uzun CSS veya inline style kullanma ihtiyacını azaltır.
+	4.	Dinamik Stil: Koşullara bağlı olarak JavaScript ile stil oluşturabilirsiniz.
+
+    <Box sx={{ color: 'primary.main', backgroundColor: 'secondary.light', padding: 2 }}>
+  Stil Verilmiş Kutucuk
+</Box>
+
+
+
+kurulum
+npm install @mui/material @emotion/react @emotion/styled
+
+iconlar
+npm install @mui/icons-material
