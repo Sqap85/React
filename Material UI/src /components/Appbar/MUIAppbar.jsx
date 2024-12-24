@@ -43,6 +43,11 @@ function MUIAppbar() {
     <div>
       {/* AppBar: Uygulamanın üst kısmındaki sabit başlık çubuğu */}
       <AppBar position="sticky" sx={{ backgroundColor: "black" }}>
+{/*         static: Sayfanın yukarısında ve normal akışta kalması gereken durumlarda kullanılır.
+sticky: Sayfa kaydırıldığında üstte sabit kalmasını istediğiniz durumlarda kullanılır.
+fixed: Sayfa kaydırıldığında her zaman görünür olmasını istediğiniz durumlarda kullanılır.
+absolute: Konumunun sayfa akışından bağımsız olmasını ve üstte sabit kalmasını istediğiniz durumlarda kullanılır.
+relative: Normal konumlamada ama yerel bir düzenleme yapmak istediğiniz durumlarda kullanılır. */}
         <Toolbar>
           {/* Typography: Başlık metni. `flexGrow` özelliği, diğer öğelerle genişleme davranışı sağlar */}
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
