@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react';
 import './App.css';
 
 // useMemo, bir değeri (memoized value) saklamak için kullanılır.
+// useMemo, fonksiyonu değil hesaplanan değeri "hatırlamak" için kullanılır.
 // Bu, her render sırasında tekrarlanan ve pahalı (zaman/performans açısından maliyetli) işlemleri önler.
 // Memoization, bir değeri hesapladıktan sonra hatırlama ve sadece gerektiğinde yeniden hesaplama işlemidir.
 
