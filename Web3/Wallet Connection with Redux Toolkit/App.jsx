@@ -44,7 +44,7 @@ function App() {
 
       setupProvider();
     }
-  }, [dispatch, provider]);  // Provider varsa tekrar çalışmaz
+  }, [provider]);  // Provider varsa tekrar çalışmaz
 
   const connect = async () => {
     if (!window.ethereum) {
